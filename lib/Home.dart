@@ -36,12 +36,16 @@ class _HomePState extends State<HomeP>with SingleTickerProviderStateMixin {
 
         bottom: new TabBar(
           controller: controller,
+          indicatorColor: Colors.lightGreen,
+          indicatorWeight: 5.0,
+//          indicatorPadding: EdgeInsets.all(10.0),
+
           tabs: <Widget>[
             
-            new Tab(icon: new Icon(Icons.print),),
-            new Tab(icon: new Icon(Icons.message),),
-            new Tab(icon: new Icon(Icons.album),),
-            new Tab(icon: new Icon(Icons.art_track),)
+            new Tab(icon: new Icon(Icons.print),text: "First Page",),
+            new Tab(icon: new Icon(Icons.message),text: "Second Page",),
+            new Tab(icon: new Icon(Icons.album),text: "Third Page",),
+            new Tab(icon: new Icon(Icons.art_track),text: "Fourth Page",)
 
           ],
 
