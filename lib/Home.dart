@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'Pages/First Page.dart' as fp;
+import 'Pages/SecondPage.dart' as sp;
+import 'Pages/ThirdPage.dart' as tp;
+import 'Pages/FourthPage.dart' as fp;
 
 class HomeP extends StatefulWidget {
   @override
@@ -44,6 +48,17 @@ class _HomePState extends State<HomeP>with SingleTickerProviderStateMixin {
         ),
 
       ),//appbar
+
+      body: new TabBarView(
+          controller: controller,
+          children: <Widget>[
+
+            new fp.Firstpase(),
+            new sp.Secondpage(),
+            new tp.Thirdpage(),
+            new fp.Fourthpage()
+
+          ],),
 
     );
 
